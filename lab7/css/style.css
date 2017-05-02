@@ -1,0 +1,11 @@
+
+body{font: 12px,'Arial';line-height:2em;}
+a{text-decoration:none; color:#727272;}
+a:hover{text-decoration:underline; }
+
+
+
+.menu a{color:#FFFFFF;text-decoration:none;}
+.menu a:hover{text-decoration:none;color:#b9f605;}
+.menu .special{color:#fdb306;}
+.menu td{color:#b9f605;}
