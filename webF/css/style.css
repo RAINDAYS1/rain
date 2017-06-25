@@ -1,10 +1,11 @@
 @font-face {
   font-family: '微软雅黑';
+  
+  font-weight: normal;
   font-style: normal;
 }
-
 body {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family:微软雅黑;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.7;
@@ -22,6 +23,7 @@ body {
   transition: 0.5s;
 }
 
+
 a {
   color: #2D6CDF;
   -webkit-transition: 0.5s;
@@ -37,13 +39,7 @@ a:hover, a:active, a:focus {
 p {
   margin-bottom: 20px;
 }
-.copyrights{
-	text-indent:-9999px;
-	height:0;
-	line-height:0;
-	font-size:0;
-	overflow:hidden;
-}
+
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
@@ -52,10 +48,14 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 0 20px 0;
 }
 
+
 ::-moz-selection {
   color: #fff;
   background: #2D6CDF;
 }
+
+
+
 .fh5co-nav {
   width: 100%;
   padding: 0;
@@ -64,7 +64,6 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-nav .top-menu {
   padding: 22px 0;
 }
-
 
 .fh5co-nav #fh5co-logo {
   font-size: 24px;
@@ -80,14 +79,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   padding-left: 25px;
 }
-.fh5co-nav #fh5co-logo a span {
-  color: #000;
-}
-.fh5co-nav #fh5co-logo a i {
-  position: absolute;
-  top: 5px;
-  left: 0;
-}
+
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1 {
     display: none;
@@ -180,8 +172,6 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 400;
 }
 
-
-
 #fh5co-course-categories,
 #fh5co-counter,
 #fh5co-course,
@@ -210,6 +200,119 @@ h1, h2, h3, h4, h5, h6, figure {
   #fh5co-footer {
     padding: 3em 0;
   }
+}
+.fh5co-heading {
+  margin-bottom: 5em;
+}
+.fh5co-heading h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #000;
+  text-transform: uppercase;
+  position: relative;
+}
+.fh5co-heading h2:after {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  width: 50px;
+  height: 1px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+
+.fh5co-event {
+  position: relative;
+  padding-left: 120px;
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+}
+.fh5co-event .date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.03);
+  display: table;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.fh5co-event .date span {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100px;
+  width: 100px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.fh5co-event h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.fh5co-event h3 a {
+  color: black;
+}
+
+.fh5co-blog {
+  margin-bottom: 30px;
+  width: 100%;
+  float: left;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-blog {
+    width: 100%;
+  }
+}
+.fh5co-blog .blog-img-holder {
+  display: block;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 270px;
+}
+.fh5co-blog .blog-text {
+  position: relative;
+  background: rgba(0, 0, 0, 0.03);
+  width: 100%;
+  padding: 30px;
+  float: left;
+}
+.fh5co-blog .blog-text span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.fh5co-blog .blog-text span.comment {
+  float: right;
+}
+.fh5co-blog .blog-text span.comment a {
+  color: rgba(0, 0, 0, 0.3);
+}
+.fh5co-blog .blog-text span.comment a i {
+  padding-left: 7px;
+}
+.fh5co-blog .blog-text h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.fh5co-blog .blog-text h3 a {
+  color: black;
 }
 
 
@@ -268,6 +371,15 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-footer .copyright .block {
   display: block;
 }
+
 .row-pb-md {
   padding-bottom: 4em !important;
 }
+
+
+
+.row-padded-mb {
+  margin-bottom: 3em !important;
+}
+
+
